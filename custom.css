@@ -1,0 +1,87 @@
+/* Custom CSS
+-------------------------*/
+div.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.dir-rtl div.logo {
+    background: url([[setting:logo]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}
+
+img.small-logo {
+    float: left;
+    height: 35px;
+    margin: 3px 10px 3px 0;
+}
+
+.dir-rtl img.small-logo {
+    float: right;
+    margin: 3px 0 3px 10px;
+}
+
+@media (max-width: 767px) {
+    .dir-rtl img.small-logo,
+    img.small-logo {
+        margin: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar img.small-logo {
+        max-width: 150px;
+    }
+    /* Applying accesshide styles */
+    .navbar .small-logo-container + .brand {
+        position: absolute;
+        left: -10000px;
+        font-size: 1em;
+        font-weight: normal;
+    }
+}
+
+
+/* Css trang quiz_list */
+/* Chỉnh sửa  giao diện trang quiz list */
+
+
+.quiz_item{
+    background-color:#c4c5c6;
+height: 150px;
+width: 150px;
+padding: 10px;
+margin: 10px;
+text-align: center;
+float:left;
+overflow: hidden;
+}
+
+.quiz_item:hover{
+    background-color: #dee7ef;
+    cursor:pointer;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.quiz_item a:visited{
+    color:#af6c3b;
+    border-radius: 10px;
+}
+
+}
+
+
+
+
+
+
+/* Custom CSS Settings
+-------------------------*/
+[[setting:customcss]]

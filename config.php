@@ -36,7 +36,7 @@ $THEME->name = 'tk';
 // in version.php and lang/en/theme_tk.php as well.
 //////////////////////////////////
 //
-$THEME->doctype = 'html5';
+
 $THEME->parents = array('bootstrapbase');
 $THEME->sheets = array('custom','quiz_list');
 $THEME->supportscssoptimisation = false;
